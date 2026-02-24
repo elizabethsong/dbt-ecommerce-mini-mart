@@ -2,14 +2,14 @@ version: 2
 
 models:
   - name: stg_customers
-    description: "Cleaned customer seed data."
+    description: "Standardized customer dimension sourced from raw mock ecommerce data. Cleaned customer seed data and prepares for downstream modeling."
     columns:
       - name: customer_id
         description: "Primary key for customers."
         tests: [not_null, unique]
 
   - name: stg_orders
-    description: "Cleaned order seed data."
+    description: "Cleaned order-level dataset with standardized statuses and monetary fields."
     columns:
       - name: order_id
         tests: [not_null, unique]
@@ -21,7 +21,7 @@ models:
               field: customer_id
 
   - name: stg_payments
-    description: "Cleaned payment seed data."
+    description: "Standardized payment records at the transaction level."
     columns:
       - name: payment_id
         tests: [not_null, unique]
@@ -33,7 +33,7 @@ models:
               field: order_id
 
   - name: fct_orders
-    description: "Order fact table with payment rollups."
+    description: "Order level fact table with aggregated payment metrics."
     columns:
       - name: order_id
         tests: [not_null, unique]

@@ -1,0 +1,11 @@
+```gitignore
+# dbt
+target/
+dbt_packages/
+logs/
+*.duckdb
+
+# python
+.venv/
+__pycache__/
+.DS_Store
