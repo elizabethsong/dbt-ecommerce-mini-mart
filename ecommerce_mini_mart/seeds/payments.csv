@@ -1,0 +1,4 @@
+payment_id,order_id,payment_date,amount,payment_method
+900,100,2025-11-10,120.00,card
+901,101,2025-11-15,75.12,card
+902,103,2025-12-1,212.00,ach

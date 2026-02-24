@@ -1,0 +1,31 @@
+[0m15:08:58.729961 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1058cd5e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106ceeae0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106cee2d0>]}
+
+
+============================== 15:08:58.735126 | 71e5fffa-0f27-48dd-91b4-4ef0465d87f1 ==============================
+[0m15:08:58.735126 [info ] [MainThread]: Running with dbt=1.11.6
+[0m15:08:58.735368 [debug] [MainThread]: running dbt with arguments {'debug': 'False', 'indirect_selection': 'eager', 'log_path': 'logs', 'partial_parse': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'fail_fast': 'False', 'log_cache_events': 'False', 'write_json': 'True', 'use_experimental_parser': 'False', 'introspect': 'True', 'target_path': 'None', 'empty': 'None', 'cache_selected_only': 'False', 'quiet': 'False', 'no_print': 'None', 'invocation_command': 'dbt init ecommerce_mini_mart', 'warn_error': 'None', 'profiles_dir': '/Users/elizabethsong/.dbt', 'send_anonymous_usage_stats': 'True', 'log_format': 'default', 'use_colors': 'True', 'printer_width': '80', 'version_check': 'True', 'static_parser': 'True'}
+[0m15:08:58.740573 [info ] [MainThread]: Creating dbt configuration folder at /Users/elizabethsong/.dbt
+[0m15:08:58.741086 [debug] [MainThread]: Starter project path: /Users/elizabethsong/Documents/~hobbies~/dbt-ecommerce-mini-mart/.venv/lib/python3.12/site-packages/dbt/include/starter_project
+[0m15:08:58.743173 [info ] [MainThread]: 
+Your new dbt project "ecommerce_mini_mart" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m15:08:58.743294 [info ] [MainThread]: Setting up your profile.
+[0m15:09:28.431054 [info ] [MainThread]: Profile ecommerce_mini_mart written to /Users/elizabethsong/.dbt/profiles.yml using target's sample configuration. Once updated, you'll be able to start developing with dbt.
+[0m15:09:28.509816 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 29.81419, "process_in_blocks": "0", "process_kernel_time": 0.151339, "process_mem_max_rss": "115769344", "process_out_blocks": "0", "process_user_time": 0.781174}
+[0m15:09:28.510370 [debug] [MainThread]: Command `dbt init` succeeded at 15:09:28.510265 after 29.81 seconds
+[0m15:09:28.510788 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106cee930>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x102170f80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106896570>]}
+[0m15:09:28.511159 [debug] [MainThread]: Flushing usage events
+[0m15:09:28.679150 [debug] [MainThread]: An error was encountered while trying to flush usage events
